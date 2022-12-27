@@ -6,26 +6,26 @@ https://leetcode.com/problems/binary-tree-level-order-traversal/
 import java.util.ArrayList;
 import java.util.List;
 
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode() {
-	}
-
-	TreeNode(int val) {
-		this.val = val;
-	}
-
-	TreeNode(int val, TreeNode left, TreeNode right) {
-		this.val = val;
-		this.left = left;
-		this.right = right;
-	}
-}
-
 public class BinaryTreeLevelOrderTraversal {
+
+	static class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+	
+		TreeNode() {
+		}
+	
+		TreeNode(int val) {
+			this.val = val;
+		}
+	
+		TreeNode(int val, TreeNode left, TreeNode right) {
+			this.val = val;
+			this.left = left;
+			this.right = right;
+		}
+	}
 
 	private static int getHeight(TreeNode root) {
 		if (root == null || (root.left == null && root.right == null)) {
